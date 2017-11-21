@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Um gráfico de barras feitos de divs</title>
+    <title>Inhaí</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
@@ -10,12 +10,12 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1>
+        <h1 id="titulo">
           Olar d3
         </h1>
         <br>
         <p id="textao">
-          Texto qualquer.
+          <a href="https://www.youtube.com/watch?v=B5-X_3_Kpww">Video motivacional</a>
         </p>
         <p id="explicacao">
           Mas página sem funcionar. Conserte aí.
@@ -27,9 +27,15 @@
       console.log(d3.version);
       // dica: está faltando carregar a biblioteca d3. ela está em https://d3js.org/d3.v4.min.js
       d3.select("#textao")
-        .text("Um parágrafo de textão dizendo várias coisas para o mundo")
+        //.text("gif de gatinho")
         .style("color", "red")
       // use o mesmo princípio para mudar o parágrafo da explicação.
+      d3.select("#explicacao")
+        .text("Que hoje seja o melhor dia da sua vida. [insira aqui mais coisas good vibes]")
+        .style("color", "purple")
+      d3.select("#titulo")
+        .style("color", "blue")
+        .text("Feliz dia para você!")
     </script>
   </body>
 </html>
